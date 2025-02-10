@@ -1,0 +1,36 @@
+0. Komputer harus terkoneksi internet.
+1. Buat akun baru di github.com
+2. Akses idx.dev dan klik "Get Started"
+	=> Login menggunakan akun Gmail anda.
+
+====================================
+1. idx.dev
+    BUKA PROJECT SEBELUMNYA!
+2. Jalankan
+
+
+WIDGET
+=================
+NamaWidget(
+	namaProperty1: value1,
+	namaProperty2: value2,
+)
+
+NamaWidget(
+	namaProperty1: value1,
+	namaProperty2: NamaWidget(
+					namaProperty1: value1,
+					namaProperty2: value2,
+	),
+)
+
+
+
+Design
+===============
+1. Layar/screen baru
+	=> Class => Stateless atau Statefull
+	=> Widget => Scaffold()
+				=> appBar
+				=> body
+				=> navigationBottomBar (Optional)
