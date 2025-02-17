@@ -25,8 +25,10 @@ class MyApp extends StatelessWidget {
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: Colors.purpleAccent,
           unselectedItemColor: Colors.white,
-          selectedItemColor: Colors.yellow[500],
-          selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+          selectedItemColor: Colors.purple.shade700,
+          selectedLabelStyle: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
           elevation: 0,
         ),
       ),
