@@ -52,7 +52,7 @@ Buka project terbaru
 	=> Ketikkan "Git" dan pilih "Git: Clone"
 	=> Tempel hasil salin HTTPS url diatas dan ENTER
 	=> Tentukan lokasi simpan (Contoh di local disk D)
-	=> Cari file "pubspek.yml", klik kanan pilih "Get Package"
+	=> Cari file "pubspec.yaml", klik kanan pilih "Get Package"
 
 
 
