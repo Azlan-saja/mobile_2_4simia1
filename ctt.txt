@@ -74,3 +74,11 @@ Buka project terbaru
 	=> Selanjutnya jalankan RUN dengan cara 
 	     klik Tombol Play di pojok kiri atas
 
+
+Navigasi 
+=> Dari Layar Navigation Ke Layar Lainnya
+========================================
+1. Kirim Data
+2. Terima Data
+3. Kirim dan Terima Data
+

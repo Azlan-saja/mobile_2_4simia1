@@ -9,6 +9,12 @@ class TerimaData extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Terima Data'),
       ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {},
+          child: const Text('selesai'),
+        ),
+      ),
     );
   }
 }
