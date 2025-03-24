@@ -69,8 +69,8 @@ Buka project terbaru
 	=> Klik "New Project" selanjutnya klik "Import From VSC"
 	=> Klik "Public Repo"
 	=> Repo URL => Tempel hasil salin HTTPS url diatas
-	=> Project Name => "Pertemuan5" selanjutnya klik import.
-	=> Buka project dengan cara Klik "Pertemuan5" 
+	=> Project Name => "Pertemuan9" selanjutnya klik import.
+	=> Buka project dengan cara Klik "Pertemuan9" 
 	=> Selanjutnya jalankan RUN dengan cara 
 	     klik Tombol Play di pojok kiri atas
 
