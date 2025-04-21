@@ -4,7 +4,9 @@ import 'package:master/screen/navigation/kirim_terima_data.dart';
 import 'package:master/screen/navigation/terima_data.dart';
 
 class Navigation extends StatelessWidget {
-  const Navigation({super.key});
+  Navigation({super.key});
+
+  final terimaDataController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -28,15 +30,29 @@ class Navigation extends StatelessWidget {
               child: const Text('Kirim Data'),
             ),
             ElevatedButton(
-              onPressed: () {
-                Navigator.push(
+              onPressed: () async {
+                final hasil = await Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => const TerimaData(),
                   ),
                 );
+                if (hasil != null) {
+                  terimaDataController.text = hasil;
+                }
               },
               child: const Text('Terima Data'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: TextFormField(
+                controller: terimaDataController,
+                readOnly: true,
+                decoration: const InputDecoration(
+                  labelText: 'Expedisi: Data dari layar Terima Data?',
+                  prefixIcon: Icon(Icons.question_mark),
+                ),
+              ),
             ),
             ElevatedButton(
               onPressed: () {

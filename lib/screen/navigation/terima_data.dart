@@ -11,7 +11,9 @@ class TerimaData extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context, 'Instan 1 Hari');
+          },
           child: const Text('selesai'),
         ),
       ),

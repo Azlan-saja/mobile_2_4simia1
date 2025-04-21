@@ -1,3 +1,26 @@
+Buka project terbaru
+================
+1.  Akses github.com/Azlan-saja
+	=> Klik Repositories
+	=> Cari dan klik mobile_2_6SIMIA1
+	=> Klik "CODE" dan salin HTTPS url
+3. Buka menggunakan VS CODE
+	=> Klik menu "VIEW" dan pilih "Command Palette"
+	=> Ketikkan "Git" dan pilih "Git: Clone"
+	=> Tempel hasil salin HTTPS url diatas dan ENTER
+	=> Tentukan lokasi simpan (Contoh di local disk D)
+	=> Tunggu proses clone selesai.
+	=> Lanjut cari file "pubspek.yml", 
+	     klik kanan pilih "Get Package"
+3. Pilih Emulator dan Jalankan project
+	=> Klik menu "VIEW" dan pilih "Command Palette"
+	=> Ketikkan "Flutter: Select Device" dan pilih "Start Emulator Flutter"
+	=> Tunggu emulator berjalan dan
+	=> Buka file main.dart 
+	=> Klik menu "RUN" dan pilih "Start Debug"
+
+
+
 0. Komputer harus terkoneksi internet.
 1. Buat akun baru di github.com
 2. Akses idx.dev dan klik "Get Started"
@@ -82,3 +105,4 @@ Navigasi
 2. Terima Data
 3. Kirim dan Terima Data
 
+Navigator.push	=> Menampilkan layar
