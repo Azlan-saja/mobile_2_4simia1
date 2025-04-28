@@ -29,6 +29,7 @@ class Navigation extends StatelessWidget {
               },
               child: const Text('Kirim Data'),
             ),
+            const Divider(thickness: 5),
             ElevatedButton(
               onPressed: () async {
                 final hasil = await Navigator.push(
@@ -54,6 +55,7 @@ class Navigation extends StatelessWidget {
                 ),
               ),
             ),
+            const Divider(thickness: 5),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
