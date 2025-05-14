@@ -56,6 +56,15 @@ class Navigation extends StatelessWidget {
               ),
             ),
             const Divider(thickness: 5),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                  labelText: 'Input Nilai A',
+                  prefixIcon: Icon(Icons.numbers),
+                ),
+              ),
+            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -66,6 +75,16 @@ class Navigation extends StatelessWidget {
                 );
               },
               child: const Text('Kirim & Terima Data'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: TextFormField(
+                readOnly: true,
+                decoration: const InputDecoration(
+                  labelText: 'A + B = ?',
+                  prefixIcon: Icon(Icons.question_mark),
+                ),
+              ),
             ),
           ],
         ),
