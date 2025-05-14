@@ -7,6 +7,7 @@ class Navigation extends StatelessWidget {
   Navigation({super.key});
 
   final terimaDataController = TextEditingController();
+  final nilaiAController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -59,6 +60,8 @@ class Navigation extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15),
               child: TextFormField(
+                keyboardType: TextInputType.number,
+                controller: nilaiAController,
                 decoration: const InputDecoration(
                   labelText: 'Input Nilai A',
                   prefixIcon: Icon(Icons.numbers),
@@ -70,7 +73,8 @@ class Navigation extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const KirimTerimaData(),
+                    builder: (context) => KirimTerimaData(
+                        nilaiA: int.tryParse(nilaiAController.text) ?? 0),
                   ),
                 );
               },

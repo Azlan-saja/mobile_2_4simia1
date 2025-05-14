@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class KirimTerimaData extends StatelessWidget {
-  const KirimTerimaData({super.key});
+  final int nilaiA;
+  KirimTerimaData({super.key, required this.nilaiA});
+
+  final nilaiBController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +19,7 @@ class KirimTerimaData extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15),
               child: TextFormField(
+                initialValue: nilaiA.toString(),
                 readOnly: true,
                 decoration: const InputDecoration(
                   labelText: 'Nilai A?',
@@ -26,6 +30,8 @@ class KirimTerimaData extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(15),
               child: TextFormField(
+                controller: nilaiBController,
+                keyboardType: TextInputType.number,
                 decoration: const InputDecoration(
                   labelText: 'Input Nilai B',
                   prefixIcon: Icon(Icons.numbers),
