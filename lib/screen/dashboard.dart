@@ -3,7 +3,7 @@ import 'package:master/screen/account.dart';
 import 'package:master/screen/home.dart';
 import 'package:master/screen/message.dart';
 import 'package:master/screen/navigation.dart';
-import 'package:master/screen/state_manajemen.dart';
+import 'package:master/screen/state_manajemen/state_manajemen.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});

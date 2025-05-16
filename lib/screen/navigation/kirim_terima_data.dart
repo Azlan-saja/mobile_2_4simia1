@@ -39,7 +39,12 @@ class KirimTerimaData extends StatelessWidget {
               ),
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                int nilaiB = int.tryParse(nilaiBController.text) ?? 0;
+                int hasil = nilaiA + nilaiB;
+                String kirimData = "$nilaiA + $nilaiB = $hasil";
+                Navigator.pop(context, kirimData);
+              },
               child: const Text('Hitung dan Tutup'),
             ),
           ],
