@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:master/screen/state_manajemen/state_global.dart';
 import 'package:master/screen/state_manajemen/state_local.dart';
 
 class StateManajemen extends StatelessWidget {
@@ -25,7 +26,16 @@ class StateManajemen extends StatelessWidget {
                   );
                 },
                 child: const Text('State Local')),
-            ElevatedButton(onPressed: () {}, child: const Text('State Global')),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const StateGlobal(),
+                    ),
+                  );
+                },
+                child: const Text('State Global')),
           ],
         ),
       ),
